@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        list-style: none;
+        padding: 0;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gallery-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .gallery-item:hover .gallery-image {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <ul class="gallery"></ul>
+
+    <script src="js/task-03.js" type="module"></script>
+  </body>
+</html>
